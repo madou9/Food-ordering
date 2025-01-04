@@ -57,7 +57,7 @@ export const useUpdateMyUser = () => {
         return response.json();
     };
     // Return the mutation function
-    const {mutateAsync: updateUser, isLoading, isError, isSuccess, error, reset} = useMutation(updateMyUserRequest);
+    const {mutateAsync: updateUser, isLoading} = useMutation(updateMyUserRequest);
     // if (isSuccess) {
     //     toast.success('User updated successfully');
     // }
